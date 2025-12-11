@@ -1,0 +1,271 @@
+
+* {
+     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-bottom: 2px solid #00ffff;
+    box-shadow: 0 4px 20px rgba(0, 255, 255, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #00ffff;
+    text-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff;
+    margin-bottom: 15px;
+    background: transparent;
+    border: none;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+header h1 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header h1 a:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 15px #ff00ff, 0 0 30px #ff00ff;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #00ffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #00ffff;
+    border-radius: 8px;
+    background: rgba(0, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+nav a:hover {
+    background: rgba(0, 255, 255, 0.3);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+section {
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid #ff00ff;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+}
+
+@keyframes pulse {
+  0%, 100% { 
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff; 
+  }
+  50% { 
+    box-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff, 0 0 60px #ff00ff; 
+  }
+}
+
+.neon-pulse {
+    border: 3px solid #ff00ff;
+    animation: pulse 2s infinite;
+}
+
+body {
+    font-family: 'Inter', sans-serif, ;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.firstparagraph,
+.secondparagraph {
+    color: #fff;
+}
+
+em {
+    color: #00ff00;
+    background: transparent;
+    font-style: italic;
+    text-shadow: 0 0 5px #00ff00;
+}
+
+img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border: 3px solid #00ffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    transition: transform 0.3s ease;
+    background: transparent;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.8);
+}
+
+.imagesetone,
+.wrapper,
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.legologo {
+    width: 450px;
+    height: 450px;
+}
+
+.cyberpunk {
+    width: 300px;
+    height: 300px;
+}
+
+.youtube {
+    width: 500px;
+    height: 100px;
+}
+
+.instagram {
+    width: 100px;
+    height: 100px;
+}
+
+.twitter {
+    width: 100px;
+    height: 100px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+    margin-bottom: 15px;
+    text-align: left;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+p{
+    color: #ffffff;
+    margin-bottom: 15px;
+    line-height: 1.8;
+    background: transparent;
+    border: none;
+    padding: 0;
+    text-align: left;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.9);
+    color: #00ffff;
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 2px solid #00ffff;
+    box-shadow: 0 -4px 20px rgba(0, 255, 255, 0.3);
+    margin-top: 60px;
+}
+
+footer p {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+footer a {
+    color: #ff00ff;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: 2px solid #ff00ff;
+    border-radius: 8px;
+    background: rgba(255, 0, 255, 0.1);
+    display: inline-block;
+    margin-top: 10px;
+}
+
+footer a:hover {
+    background: rgba(255, 0, 255, 0.3);
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+a {
+    color: #000000;
+}
+
+a:visited {
+    background: transparent;
+}
+
+a:hover {
+    color:#ff00ff;
+    text-shadow: 0 0 8px #ff00ff;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+    .legologo,
+    .cyberpunk {
+        width: 250px;
+        height: 250px
+    }
+    }
+}

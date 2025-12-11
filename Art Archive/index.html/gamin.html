@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>Cyberpunk Clicker</title>
+        <link href="css/style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>
+            body{font-family:Inter, system-ui, sans-serif;background:#05060a;color:#c8f0ff;margin:0;padding:0}
+            header{padding:12px 18px;background:linear-gradient(90deg,#060812, #0b0f18)}
+            nav a{color:#66f5ff;text-decoration:none;font-weight:600}
+            main{padding:22px;max-width:980px;margin:18px auto}
+            .hud{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+            .card{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;box-shadow:0 4px 18px rgba(0,0,0,0.6)}
+            .big-btn{background:#00e6ff;color:#001018;border:none;padding:18px 26px;border-radius:12px;font-size:20px;cursor:pointer}
+            .shop{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+            .shop-item{display:flex;justify-content:space-between;align-items:center;padding:10px;border-radius:8px;background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01))}
+            .muted{color:#9fd6df}
+            .danger{color:#ff7b7b}
+            .stats{margin-top:12px;display:flex;gap:12px}
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">← Home</a>
+            </nav>
+        </header>
+        <main>
+            <h1 style="font-size:28px;margin-bottom:6px">Neon Hack — Cyberpunk Clicker</h1>
+            <p class="muted">Earn <strong>dollars</strong> by hacking; buy cyberware, servers and AI. Purchases cost humanity.</p>
+
+            <div class="hud">
+                <div class="card" style="flex:1;min-width:220px">
+                    <div style="display:flex;align-items:center;justify-content:space-between">
+                        <div>
+                            <div class="muted">Dollars</div>
+                            <div id="dollars" style="font-size:20px;font-weight:700">$0</div>
+                        </div>
+                        <div style="text-align:right">
+                            <div class="muted">Humanity</div>
+                            <div id="humanity" style="font-size:20px;font-weight:700">100%</div>
+                        </div>
+                    </div>
+                    <div class="stats">
+                        <div class="muted">DPC: <span id="dpc">1</span></div>
+                        <div class="muted">DPS: <span id="dps">0</span></div>
+                    </div>
+                </div>
+
+                <div class="card" style="min-width:220px;display:flex;flex-direction:column;align-items:center;justify-content:center">
+                    <button id="hackBtn" class="big-btn">Hack (Click)</button>
+                    <div class="muted" style="margin-top:8px">Click to earn dollars</div>
+                </div>
+            </div>
+
+            <section class="card" style="margin-top:16px">
+                <h3 style="margin:0 0 8px 0">Black Market — Shop</h3>
+                <div class="shop" id="shop"></div>
+            </section>
+
+            <section style="margin-top:14px">
+                <div class="muted">Progress is saved to your browser automatically.</div>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
